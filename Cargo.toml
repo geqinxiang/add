@@ -1,2 +1,2 @@
 [workspace]
-members= ["adder","add-one", "abox", "deref"]
+members= ["adder","add-one", "abox", "deref", "mythread"]
