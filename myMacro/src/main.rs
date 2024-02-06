@@ -13,7 +13,8 @@
 //! 3、实现宏不如实现函数的一面是宏定义要比函数定义更复杂，因为你正在编写生成 Rust 代码的 Rust 代码。由于这样的间接性，宏定义通常要比函数定义更难阅读、理解以及维护。
 //! 4、宏和函数的最后一个重要的区别是：在一个文件里调用宏 之前 必须定义它，或将其引入作用域，而函数则可以在任何地方定义和调用。
 
-
+use hello_macro::HelloMacro;
+use hello_macro_derive::HelloMacro;
 fn main() {
     println!("Hello, world!");
     let mut v=vec1![1,2,3];
@@ -42,14 +43,7 @@ macro_rules! vec1 {
     };
 }
 
+
+
+#[derive(HelloMacro)]
 struct Pancakes;
-
-impl HelloMacro for Pancakes {
-    fn hello_macro() {
-        println!("Hello, Macro! My name is Pancakes!");
-    }
-}
-
-pub trait HelloMacro {
-    fn hello_macro();
-}

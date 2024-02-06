@@ -1,2 +1,2 @@
 [workspace]
-members= ["adder","add-one", "abox", "deref", "mythread", "oo", "mymode", "myunsafe", "myhightrait", "myhightype", "myhighfn", "myMacro"]
+members= ["adder","add-one", "abox", "deref", "mythread", "oo", "mymode", "myunsafe", "myhightrait", "myhightype", "myhighfn", "myMacro", "hello_macro", "hello_macro_derive"]
